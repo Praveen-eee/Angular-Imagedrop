@@ -1,0 +1,28 @@
+<div>
+  <h1>Pick a Game</h1>
+</div>
+<div class="main">
+  Game name:
+  <input class="inp-text" type="text" name="inp" [(ngModel)]="inp" />
+  <label for="games">Choose a game:</label>
+  <select #games>
+    <option>Select</option>
+    <option value="gow">God of War</option>
+    <option value="gta">GTA V</option>
+    <option value="valorant">Valorant</option>
+  </select>
+  <br /><br />
+  <br />
+  <div class="sub">
+    <button (click)="disp(games.value, inp)">SUBMIT</button>
+  </div>
+
+  <div>
+    <img src="{{ link }}" />
+    <br />
+    {{ case | uppercase }}
+    <br />
+    {{ case | lowercase }}
+  </div>
+</div>
+<!-- <select #games (change)="disp(games.value)"></select> -->

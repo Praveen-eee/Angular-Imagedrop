@@ -1,0 +1,16 @@
+.inp-text{
+    margin-right: 50px;
+}
+.sub{
+    display: inline-block;
+    width: 200px;
+    text-align:right;
+    margin-left: 120px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(125, 213, 227);
+}
+button:active{
+    background-color: blue;
+}
